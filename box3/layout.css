@@ -1,0 +1,167 @@
+html body
+{
+	margin: 0px;
+	background-color: #28efef;
+	min-width: 1000px;
+}
+
+/*
+default css
+*/
+.beside
+{
+	display: inline-block;
+}
+
+textarea,button,input
+{
+	font-family: arial;
+	box-sizing: border-box;
+}
+
+
+.animate
+{
+	transition: 0.444s;
+}
+
+.bordered
+{
+	border-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	border-color: #bf9898;
+}
+
+.navBar
+{
+	width: 100%;
+	height: 30px;
+	background-color: #70779e;
+}
+
+.navBar .btnWidget
+{
+	height: 100%;
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.navBar span
+{
+	width: auto;
+	height: 100%;
+	float: right;
+	padding: 8px;
+	box-sizing: border-box;
+}
+.navBar a
+{
+	color: white;
+}
+
+.navBar a:hover
+{
+	color: #eaeaea;
+}
+
+.navBar .btnWidget:hover
+{
+	opacity: 0.9;
+}
+
+.navBar #copyClip
+{
+	background-color: #aeb3d0;
+}
+
+.navBar #clear
+{
+	background-color: #dc5252;
+}
+
+.navBar #template
+{
+	background-color: #24c124;
+}
+
+.navBar span
+{
+	color: #28efef;
+}
+
+.wrapper 
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.wrapper textarea
+{
+	min-width: 600px;
+	padding: 5px;
+	width: 520px;
+	height: 270px;
+	resize: both;
+	outline-width: 4px;
+	font-size: 25px;
+	color: #7d5858;
+}
+
+.wrapper textarea:focus
+{
+	outline: solid;
+    outline-color: #dadaea;
+    border-style: none;
+}
+
+.widget
+{
+	background-color: #fbfbfb;
+	width: 600px;
+	height: auto;
+	min-height: 30px;
+	vertical-align: top;
+	display: block;
+}
+
+.manager
+{
+	width: auto;
+	height: auto;
+	background-color: #d3e0e0;
+	display: block;
+	padding: 5px;
+	visibility: hidden;
+	box-sizing: border-box;
+}
+
+.manager textarea,input
+{
+	width: 100%;
+	min-width: 0px;
+	min-height: 0px;
+}
+
+.manager textarea
+{
+	height: 186px;
+	font-size: 20px;
+}
+
+.manager span
+{
+	display: block;
+}
+
+.wgtBtn
+{
+	display: block;
+}
+
+#close
+{
+	margin-left: auto;
+}
