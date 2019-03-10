@@ -1,5 +1,7 @@
 
 //rough sketch for now
+//1 mounth later...
+//dear god no one can read my code and its too late to change anything
 document.getElementById("copyClip").addEventListener("click",function()
 {
 	document.getElementById("docs").select();
@@ -8,7 +10,12 @@ document.getElementById("copyClip").addEventListener("click",function()
 
 document.getElementById("clear").addEventListener("click",function()
 {
-	document.getElementById("docs").value = "";
+	document.getElementById("docs").select();
+	document.execCommand("delete");
+	if(document.getElementById("docs").value !="")
+	{
+		document.execCommand("cut");
+	}
 })
 
 document.getElementById("template").addEventListener("click",function()
@@ -32,10 +39,11 @@ function load_wizard()
 	};
 	button.saveButton.addEventListener("click",function()
 	{
-		button.screen.innerHTML+="<button name='"+button.noteBin.value+"'class='t'>"+button.titleBin.value+"</button>";
+		button.screen.innerHTML+=" <div class='btnWrapper' id='wrapbtn'><button name='"+button.noteBin.value+"'class='t'>"+button.titleBin.value+"</button>"+"<button class='delete'>X</button></div>";
 		for(i=0;i<document.getElementsByClassName("t").length;i++)
 		{
 			document.getElementsByClassName("t")[i].addEventListener("click",handle_wizard);
+			document.getElementsByClassName("delete")[i].addEventListener("click",delete_parent);
 		}
 	});
 }
@@ -44,6 +52,7 @@ function handle_wizard(e)
 {
 	var view = document.getElementById("docs");
 	view.value += e.target.name+"\n";
+	
 }
 
 window.onload = function checkHold()
@@ -53,3 +62,9 @@ window.onload = function checkHold()
 		document.getElementsByClassName("t")[i].addEventListener("click",handle_wizard);
 	}
 }
+
+function delete_parent(e)
+{
+	e.target.parentNode.outerHTML = "";
+}
+

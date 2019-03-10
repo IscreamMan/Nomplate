@@ -1,7 +1,7 @@
 html body
 {
 	margin: 0px;
-	background-color: #28efef;
+	background-color: #2e344e;
 	min-width: 1000px;
 }
 
@@ -122,7 +122,6 @@ textarea,button,input
 	background-color: #fbfbfb;
 	width: 600px;
 	height: auto;
-	min-height: 30px;
 	vertical-align: top;
 	display: block;
 }
@@ -164,4 +163,12 @@ textarea,button,input
 #close
 {
 	margin-left: auto;
+}
+
+.btnWrapper
+{
+	display: inline;
+	width: 50px;
+	min-height: 20px;
+	background-color: pink;
 }
