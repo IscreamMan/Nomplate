@@ -172,3 +172,9 @@ textarea,button,input
 	min-height: 20px;
 	background-color: pink;
 }
+
+.delete {
+    background-color: #dc5252;
+    color: white;
+    font-weight: bold;
+}
